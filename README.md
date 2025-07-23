@@ -1,12 +1,13 @@
-# Digital Room Exam - Next.js Shopping Cart
+# Digital Room Exam - Shopping Cart
 
-## Setup Instructions
+## How to Setup
 
-1. **Clone the repository:**
+1. **Clone this repo:**
 
    ```bash
-   git clone <your-repo-url>
-   cd digital_room_exam
+   git clone https://github.com/drengual/digitalRoomExam.git
+   cd digitalRoomExam
+
    ```
 
 2. **Install dependencies:**
@@ -17,7 +18,7 @@
    yarn install
    ```
 
-3. **Run the development server:**
+3. **Start the app:**
 
    ```bash
    npm run dev
@@ -25,51 +26,42 @@
    yarn dev
    ```
 
-4. **Open your browser:**
-   Visit [http://localhost:3000](http://localhost:3000) to view the app.
+4. **Open your browser:**  
+   Go to [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## Features Implemented
+## Features
 
-- **Product Listing:**  
-  Displays a list of products with images, names, and prices.
+- **Product List:**  
+  See products with images, names, and prices.
 
 - **Add to Cart:**  
-  Users can add products to the cart. If the product already exists, its quantity increases.
+  Click "Add Item" to put products in your cart. If you add the same product again, it just increases the quantity.
 
 - **Cart Summary:**  
-  Shows product name, image, quantity, subtotal per item, and grand total.
+  Shows each product in your cart, its image, how many you have, the subtotal for each, and the total for all.
 
 - **Coupon Code:**  
-  Users can enter the coupon code `SAVE10` for 10% off on items with a subtotal of $100 or more (max $50 discount per item).
+  Enter `SAVE10` to get 10% off items with a subtotal of $100 or more (max $50 discount per item).
 
-- **Remove from Cart:**  
-  Users can remove items from the cart.
+- **Remove item from Cart:**  
+  You can remove item from your cart.
 
-- **Cart Persistence:**  
-  Cart contents are saved in `localStorage` and persist after page reloads.
-
-- **Responsive Layout:**  
-  Product listing and cart summary are displayed side by side on desktop.
+- **Cart Stays After Reload:**  
+  Your cart is saved in your browser, so it stays even if you refresh.
 
 ---
 
 ## Assumptions
 
-- Product images are stored in the `public/images` folder.
-- Only the coupon code `SAVE10` is supported.
-- The cart is stored in the browser's `localStorage` for persistence.
-- No backend/API is used; products are loaded from a mock API file.
+- Product images are in the `public/images` folder.
+- Only the coupon code `SAVE10` works.
+- Cart is saved in the browser using `localStorage`.
+- Products come from a mock API file, not a real server; `services/mockApi.js`
 
 ---
 
 ## Time Spent
 
-- **Planning & Setup:** ~30 minutes
-- **Product & Cart Implementation:** ~1 hour
-- **Coupon & Cart Persistence:** ~30 minutes
-- **Styling & Layout:** ~30 minutes
-- **Testing & README:** ~15 minutes
-
-**Total:** ~2 hours 45 minutes
+- 18 hours
